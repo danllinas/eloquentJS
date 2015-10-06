@@ -167,3 +167,63 @@
 // }
 //
 // console.log(countChar("kkakarkmaka", "k"));
+// var mack = [];
+// mack.push("Mack");
+// mack.push("the", "knife");
+// console.log(mack.pop());
+// console.log(mack);
+// var day1 = {
+//   squirrel: false,
+//   events: ["work", "touched tree", "pizza", "running", "television"],
+//   'touched tree': "Touched"
+// };
+// console.log(day1.events);
+// console.log(day1.wolf);
+// day1.wolf = false;
+// console.log(day1.wolf);
+// console.log(day1);
+// var anObject = {left: 1, right: 2}
+// console.log(anObject.left);
+// delete anObject.left;
+// console.log("right" in anObject);
+// console.log(typeof [1,2]);
+// var journal = [
+//   {
+//     events: ['work', 'touched tree', 'pizza', 'running', 'television'],
+//     squirrel: false
+//   },
+//   {
+//     events: ['work', 'ice cream', 'cauliflower', 'lasagna', 'touched tree', 'brushed teeth'],
+//     squirrel: false
+//   },
+//   {
+//     events: ['weekend', 'cycling', 'break', 'peanuts', 'beer'],
+//     squirrel: true
+//   }
+// ]
+// console.log(journal[1].squirrel);
+// var object1 = {value: 10};
+// var object2 = object1
+// console.log(object1 == object2);
+// object1.value = 15;
+// console.log(object2.value);
+// var journal = [];
+//
+// function addEntry(dayEvents, squirrelTurn) {
+//   journal.push({events: dayEvents, squirrel: squirrelTurn});
+// }
+//
+// addEntry(['work', 'touched tree', 'pizza', 'running', 'television'], false);
+// addEntry(['work', 'ice cream', 'cauliflower', 'lasagna', 'touched tree', 'brushed teeth'], false);
+// addEntry(['weekend', 'cycling', 'break', 'peanuts', 'beer'], true);
+//
+// console.log(journal);
+// function phi(table) {
+//   return (table[3] * table[0] - table[2] * table[1])/
+//             Math.sqrt((table[2] + table[3]) *
+//                       (table[0] + table[1]) *
+//                       (table[1] + table[3]) *
+//                       (table[0] + table[2]));
+// }
+//
+// console.log(phi([76, 9, 4, 1]))
