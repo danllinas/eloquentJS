@@ -109,31 +109,32 @@
 //   return find(1, "1");
 // }
 // console.log(findSolution(13));
-
-// function printFarmInventory(cows, chickens) {
-//   var cowString = String(cows);
-//   var chickenString = String(chickens);
 //
-//   while (cowString.length < 3) {
-//     cowString = "0" + cowString;
-//   }
-//
-//   while (chickenString.length < 3) {
-//     chickenString = "0" + chickenString;
-//   }
-//
-//   console.log(cowString + " Cows");
-//   console.log(chickenString + " Chickens");
+// function printFarmInventory(cows, chickens, pigs) {
+//   console.log(zeroPad(cows, 3) + " Cows");
+//   console.log(zeroPad(chickens, 3) + " Chickens");
+//   console.log(zeroPad(pigs, 3) + " Pigs");
 // }
 //
-// printFarmInventory(11, 7);
+// function zeroPad(number, width) {
+//   var string = String(number);
+//   while (string.length < width) {
+//     string = "0" + string;
+//   }
+//   return string;
+// }
+//
+// printFarmInventory(100, 55, 7);
+//
 
-function printWithLabel(number, label) {
-  var number = String(number);
-  while (number.length < 3) {
-    number = "0" + number;
-  }
-  console.log(number + " " + label);
-}
-
-printWithLabel(100, "Cows");
+// function minimum(num1, num2) {
+//   if (num1 < num2) {
+//     return num1;
+//   } else if (num1 == num2) {
+//     return "They're even!";
+//   } else {
+//     return num2;
+//   }
+// }
+//
+// console.log(minimum(255, 25));
