@@ -138,3 +138,32 @@
 // }
 //
 // console.log(minimum(255, 25));
+
+// function isEven(number){
+//   if (number < 0) {
+//     number = number * -1
+//   }
+//   if (number == 0) {
+//     return true;
+//   } else if (number == 1) {
+//     return false;
+//   } else {
+//     return isEven(number - 2);
+//   }
+// }
+//
+// console.log(isEven(-30));
+///////////////////
+/////Bean Counting
+//////////////////
+// function countChar (string, letter){
+//   var count = 0;
+//   for (var x = 0; x < string.length; x++) {
+//     if (string.charAt(x) == letter) {
+//       count += 1;
+//     }
+//   }
+//   return count;
+// }
+//
+// console.log(countChar("kkakarkmaka", "k"));
