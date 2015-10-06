@@ -95,17 +95,45 @@
 //   }
 // }
 // console.log(power(2, 10))
-function findSolution(target){
-  function find(start, history){
-    if (start == target) {
-      return history;
-    } else if (start > target) {
-      return null
-    } else {
-      return find(start + 5, "(" + history + " + 5)") ||
-             find(start * 3, "(" + history + " * 3)");
-    }
+// function findSolution(target){
+//   function find(start, history){
+//     if (start == target) {
+//       return history;
+//     } else if (start > target) {
+//       return null
+//     } else {
+//       return find(start + 5, "(" + history + " + 5)") ||
+//              find(start * 3, "(" + history + " * 3)");
+//     }
+//   }
+//   return find(1, "1");
+// }
+// console.log(findSolution(13));
+
+// function printFarmInventory(cows, chickens) {
+//   var cowString = String(cows);
+//   var chickenString = String(chickens);
+//
+//   while (cowString.length < 3) {
+//     cowString = "0" + cowString;
+//   }
+//
+//   while (chickenString.length < 3) {
+//     chickenString = "0" + chickenString;
+//   }
+//
+//   console.log(cowString + " Cows");
+//   console.log(chickenString + " Chickens");
+// }
+//
+// printFarmInventory(11, 7);
+
+function printWithLabel(number, label) {
+  var number = String(number);
+  while (number.length < 3) {
+    number = "0" + number;
   }
-  return find(1, "1");
+  console.log(number + " " + label);
 }
-console.log(findSolution(13));
+
+printWithLabel(100, "Cows");
