@@ -177,12 +177,16 @@ function range(start, end, step) {
     for (var i = start; i <= end; i++) {
       array.push(i);
     }
-  } else {
-    for (var x = start; x <= end; x += step) {
+  }
+  if (step < 0) {
+    for (var x = end; x >= start; x += step) {
       array.push(x);
     }
+  } else {
+    for (var y = start; y <= end; y += step) {
+      array.push(y);
+    }
   }
-
   return array;
 }
 
@@ -194,4 +198,5 @@ function sum(array) {
   return count;
 }
 
-console.log(range(1, 10, 2));
+
+console.log(range(1, 10, -2));
