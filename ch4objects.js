@@ -170,33 +170,56 @@
 //
 // console.log(Math.floor(Math.random() * 10));
 
-function range(start, end, step) {
-  var array = [];
+// function range(start, end, step) {
+//   var array = [];
+//
+//   if (arguments.length < 3) {
+//     for (var i = start; i <= end; i++) {
+//       array.push(i);
+//     }
+//   }
+//   if (step < 0) {
+//     for (var x = end; x >= start; x += step) {
+//       array.push(x);
+//     }
+//   } else {
+//     for (var y = start; y <= end; y += step) {
+//       array.push(y);
+//     }
+//   }
+//   return array;
+// }
+//
+// function sum(array) {
+//   var count = 0;
+//   for (var i = 0, len = array.length; i < len; i++) {
+//     count += array[i];
+//   }
+//   return count;
+// }
+//
+//
+// console.log(range(1, 10, -2));
 
-  if (arguments.length < 3) {
-    for (var i = start; i <= end; i++) {
-      array.push(i);
-    }
-  }
-  if (step < 0) {
-    for (var x = end; x >= start; x += step) {
-      array.push(x);
-    }
-  } else {
-    for (var y = start; y <= end; y += step) {
-      array.push(y);
-    }
-  }
-  return array;
+function reverseArray(array) {
+  var output = [];
+  for (var i = array.length - 1; i >= 0; i--)
+    output.push(array[i]);
+  return output;
 }
 
-function sum(array) {
-  var count = 0;
-  for (var i = 0, len = array.length; i < len; i++) {
-    count += array[i];
+function reverse(array) {
+  var newArray = []
+  while (array.length > 0) {
+    newArray.push(array.pop());
   }
-  return count;
+  return newArray;
 }
 
+console.log(reverse([1,2,3,4,5]));
 
-console.log(range(1, 10, -2));
+function reverseInPlace(array) {
+  ;
+}
+
+console.log(reverseInPlace([1,2,3,4,5,6]));
