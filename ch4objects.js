@@ -201,25 +201,66 @@
 //
 // console.log(range(1, 10, -2));
 
-function reverseArray(array) {
-  var output = [];
-  for (var i = array.length - 1; i >= 0; i--)
-    output.push(array[i]);
-  return output;
-}
+// function reverseArray(array) {
+//   var output = [];
+//   for (var i = array.length - 1; i >= 0; i--)
+//     output.push(array[i]);
+//   return output;
+// }
+//
+// function reverse(array) {
+//   var newArray = []
+//   while (array.length > 0) {
+//     newArray.push(array.pop());
+//   }
+//   return newArray;
+// }
+//
+// console.log(reverse([1,2,3,4,5]));
 
-function reverse(array) {
-  var newArray = []
-  while (array.length > 0) {
-    newArray.push(array.pop());
-  }
-  return newArray;
-}
+// function reverseInPlace(array) {
+//   var placeHolder;
+//   for (var i = 0, len = array.length; i < Math.floor(len/2); i++) {
+//     placeHolder = i;
+//     array[i] = array.length -1 -i;
+//     array[len - 1] = placeHolder;
+//   }
+//   return array
+// }
 
-console.log(reverse([1,2,3,4,5]));
+// function reverseInPlace(array) {
+//   for (var i = 0; i < Math.floor(array.length / 2); i++) {
+//     var old = array[i];
+//     array[i] = array[array.length - 1 - i];
+//     array[array.length - 1 - i] = old;
+//   }
+//   return array;
+// }
+//
+// console.log(reverseInPlace([1,2,3,4,5]));
 
-function reverseInPlace(array) {
-  ;
-}
-
-console.log(reverseInPlace([1,2,3,4,5,6]));
+// var array = [10, 20, 30];
+//
+// function arrayToList(array) {
+//   var list = null;
+//   for (var x = array.length - 1; x >=0; x--){
+//     var list = {value: array[x], rest: list};
+//   }
+//   return list;
+// }
+//
+// function listToArray(list) {
+//   var array = [];
+//   for (var node = list; node; node = node.rest)  {
+//     array.push(node.value);
+//   }
+//   return array;
+// }
+//
+// function prepend(value, list) {
+//   return {value: value, rest: list}
+// }
+//
+// console.log(arrayToList(array));
+// console.log(listToArray(arrayToList([10,20,30])));
+// console.log(prepend(10, prepend(20, null)));
